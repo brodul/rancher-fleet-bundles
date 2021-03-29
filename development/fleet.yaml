@@ -9,11 +9,11 @@ helm:
   # This allows one to download charts from most any location.  Also know that
   # go-getter URL supports adding a digest to validate the download. If repo
   # is set below this field is the name of the chart to lookup
-  chart: response-hostname
+  chart: https://helm3.brodul.org/response-hostname-0.1.6.tgz?checksum=576b3824ae3f96671a0737161e702501e65437bd19da16e39a80ab6cf6e0805e
   # A https URL to a Helm repo to download the chart from. It's typically easier
   # to just use `chart` field and refer to a tgz file.  If repo is used the
   # value of `chart` will be used as the chart name to lookup in the Helm repository.
-  repo: https://helm3.brodul.org
+  # repo: https://helm3.brodul.org
   # A custom release name to deploy the chart as. If not specified a release name
   # will be generated.
   releaseName: panda-hostname-development
